@@ -89,6 +89,13 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         fontFamily: 'Varela',
                         fontSize: 20.0.sp,
                       )),
+                ),
+                Tab(
+                  child: Text('Croissant',
+                      style: TextStyle(
+                        fontFamily: 'Varela',
+                        fontSize: 20.0.sp,
+                      )),
                 )
               ]),
           SizedBox(
@@ -97,6 +104,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             child: TabBarView(
               controller: _tabController,
               children: const [
+                CakeryPage(),
                 CakeryPage(),
                 CakeryPage(),
                 CakeryPage(),

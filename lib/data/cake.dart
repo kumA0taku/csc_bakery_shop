@@ -65,4 +65,20 @@ final List<Cake> listCakes = [
     isFavorite: true,
     subMenu: 'cake_box',
   ),
+  Cake(
+    id: 5,
+    name: 'Chocolate Croissant',
+    price: '75.50',
+    imageUrl: 'assets/crois2.jpeg',
+    isFavorite: false,
+    subMenu: 'cro_issant',
+  ),
+  Cake(
+    id: 6,
+    name: 'Milk Croissant',
+    price: '69.50',
+    imageUrl: 'assets/crois1.png',
+    isFavorite: false,
+    subMenu: 'cro_issant',
+  ),
 ];

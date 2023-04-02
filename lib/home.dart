@@ -16,7 +16,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 5, vsync: this);
   }
 
   @override
@@ -70,6 +70,13 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               unselectedLabelColor: const Color(0xFFCDCDCD),
               tabs: [
                 Tab(
+                  child: Text('All',
+                      style: TextStyle(
+                        fontFamily: 'Varela',
+                        fontSize: 20.0.sp,
+                      )),
+                ),
+                Tab(
                   child: Text('Cake Box',
                       style: TextStyle(
                         fontFamily: 'Varela',
@@ -84,7 +91,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       )),
                 ),
                 Tab(
-                  child: Text('Chiffon',
+                  child: Text('Brownies',
                       style: TextStyle(
                         fontFamily: 'Varela',
                         fontSize: 20.0.sp,
@@ -104,6 +111,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             child: TabBarView(
               controller: _tabController,
               children: const [
+                CakeryPage(),
                 CakeryPage(),
                 CakeryPage(),
                 CakeryPage(),

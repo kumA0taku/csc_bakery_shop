@@ -83,8 +83,8 @@ class CakeryPage extends StatelessWidget {
                 ),
               ),
               Container(
-                height: 92.h,
-                width: 92.w,
+                height: 50.h,
+                width: 50.w,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16.r),
                   image: DecorationImage(
@@ -96,7 +96,7 @@ class CakeryPage extends StatelessWidget {
               SizedBox(height: 8.h),
               Center(
                 child: Text(
-                  'Rp ${cake.price}',
+                  'Price: ${cake.price} THB',
                   style: TextStyle(
                       color: const Color(0xFFCC8053),
                       fontFamily: 'Varela',
@@ -113,71 +113,74 @@ class CakeryPage extends StatelessWidget {
                       fontSize: 14.sp),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.all(8.0.sp),
-                child: Container(
-                  color: const Color(0xFFEBEBEB),
-                  height: 1.0.sp,
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 4.sp),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.chat,
-                          color: const Color(0xFFD17E50),
-                          size: 16.sp,
-                        ),
-                        SizedBox(
-                          width: 8.sp,
-                        ),
-                        Text(
-                          'Chat',
-                          style: TextStyle(
-                              fontFamily: 'Varela',
-                              color: const Color(0xFFD17E50),
-                              fontSize: 12.sp),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      width: 16.h,
-                    ),
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.remove_circle_outline,
-                          color: const Color(0xFFD17E50),
-                          size: 16.sp,
-                        ),
-                        SizedBox(
-                          width: 8.w,
-                        ),
-                        Text(
-                          '3',
-                          style: TextStyle(
-                              fontFamily: 'Varela',
-                              color: const Color(0xFFD17E50),
-                              fontWeight: FontWeight.bold,
-                              fontSize: 12.sp),
-                        ),
-                        SizedBox(
-                          width: 8.w,
-                        ),
-                        Icon(
-                          Icons.add_circle_outline,
-                          color: const Color(0xFFD17E50),
-                          size: 16.sp,
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+
+              // Padding(
+              //   padding: EdgeInsets.all(8.0.sp),
+              //   child: Container(
+              //     color: const Color(0xFFEBEBEB),
+              //     height: 1.0.sp,
+              //   ),
+              // ),
+
+              // Padding(
+              //   padding: EdgeInsets.symmetric(horizontal: 4.sp),
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.center,
+              //     children: [
+              //       Row(
+              //         children: [
+              //           Icon(
+              //             Icons.chat,
+              //             color: const Color(0xFFD17E50),
+              //             size: 16.sp,
+              //           ),
+              //           SizedBox(
+              //             width: 8.sp,
+              //           ),
+              //           Text(
+              //             'Chat',
+              //             style: TextStyle(
+              //                 fontFamily: 'Varela',
+              //                 color: const Color(0xFFD17E50),
+              //                 fontSize: 12.sp),
+              //           ),
+              //         ],
+              //       ),
+              //       SizedBox(
+              //         width: 16.h,
+              //       ),
+              //       Row(
+              //         children: [
+              //           Icon(
+              //             Icons.remove_circle_outline,
+              //             color: const Color(0xFFD17E50),
+              //             size: 16.sp,
+              //           ),
+              //           SizedBox(
+              //             width: 8.w,
+              //           ),
+              //           Text(
+              //             '3',
+              //             style: TextStyle(
+              //                 fontFamily: 'Varela',
+              //                 color: const Color(0xFFD17E50),
+              //                 fontWeight: FontWeight.bold,
+              //                 fontSize: 12.sp),
+              //           ),
+              //           SizedBox(
+              //             width: 8.w,
+              //           ),
+              //           Icon(
+              //             Icons.add_circle_outline,
+              //             color: const Color(0xFFD17E50),
+              //             size: 16.sp,
+              //           ),
+              //         ],
+              //       ),
+              //     ],
+              //   ),
+              // ),
+
             ],
           ),
         ),

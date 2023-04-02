@@ -66,7 +66,7 @@ final List<Cake> listCakes = [
     subMenu: 'cake_box',
   ),
   Cake(
-    id: 5,
+    id: 7,
     name: 'Chocolate Croissant',
     price: '75.50',
     imageUrl: 'assets/crois2.jpeg',
@@ -74,7 +74,7 @@ final List<Cake> listCakes = [
     subMenu: 'cro_issant',
   ),
   Cake(
-    id: 6,
+    id: 8,
     name: 'Milk Croissant',
     price: '69.50',
     imageUrl: 'assets/crois1.png',

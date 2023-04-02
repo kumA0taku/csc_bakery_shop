@@ -16,7 +16,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(length: 4, vsync: this);
   }
 
   @override
@@ -34,7 +34,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           onPressed: () {},
         ),
         title: Text(
-          'Bahri Cakery',
+          'CSC Bakery',
           style: TextStyle(
             fontFamily: 'Varela',
             fontSize: 24.0.sp,

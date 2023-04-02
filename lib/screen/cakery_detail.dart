@@ -170,12 +170,6 @@ class CakeryDetail extends StatelessWidget {
           SizedBox(height: 28.0.h),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: const Color(0xFFF17532),
-        child: const Icon(Icons.fastfood),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: const NavbarWidget(),
     );
   }

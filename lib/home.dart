@@ -113,12 +113,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           )
         ],
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: const Color(0xFFF17532),
-        child: const Icon(Icons.fastfood),
-      ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {},
+      //   // backgroundColor: const Color(0xFFF17532),
+      //   // child: const Icon(Icons.fastfood),
+      // ),
       bottomNavigationBar: const NavbarWidget(),
     );
   }

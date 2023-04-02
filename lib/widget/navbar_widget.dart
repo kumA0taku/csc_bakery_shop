@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cakery_shop_ui/home.dart';
+import 'package:flutter_cakery_shop_ui/screen/bakery_tt_cart.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class NavbarWidget extends StatelessWidget {
@@ -29,15 +31,35 @@ class NavbarWidget extends StatelessWidget {
               width: MediaQuery.of(context).size.width / 2 - 40.0.w,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
-                  Icon(
-                    Icons.home,
+                children: <Widget>[
+                  //     IconButton(
+                  //       iconSize: 30.0,
+                  //       padding: EdgeInsets.only(left: 28.0),
+                  //           color: Color(0xFFEF7532),
+                  //       icon: Icon(Icons.home),
+                  //       onPressed: () {
+
+                  // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                  //   return BakeryTTCart(
+                  //     // assetPath: cake.imageUrl,
+                  //     // cookieprice: cake.price,
+                  //     // cookiename: cake.name,
+                  //   );
+                  // }));
+                  //       },
+
+                  IconButton(
+                    iconSize: 30.0,
+                    padding: EdgeInsets.only(left: 28.0),
+                    icon: Icon(Icons.home),
                     color: Color(0xFFEF7532),
+                    onPressed: () {
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) {
+                        return Home();
+                      }));
+                    },
                   ),
-                  Icon(
-                    Icons.search,
-                    color: Color(0xFF676E79),
-                  )
                 ],
               ),
             ),
@@ -46,15 +68,19 @@ class NavbarWidget extends StatelessWidget {
               width: MediaQuery.of(context).size.width / 2 - 40.0.w,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
-                  Icon(
-                    Icons.shopping_basket_outlined,
+                children: <Widget>[
+                  IconButton(
+                    iconSize: 30.0,
+                    padding: EdgeInsets.only(left: 28.0),
+                    icon: Icon(Icons.shopping_basket_outlined),
                     color: Color(0xFF676E79),
+                    onPressed: () {
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) {
+                        return BakeryTTCart();
+                      }));
+                    },
                   ),
-                  Icon(
-                    Icons.person_outline,
-                    color: Color(0xFF676E79),
-                  )
                 ],
               ),
             ),

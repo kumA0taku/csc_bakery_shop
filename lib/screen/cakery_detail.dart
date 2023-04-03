@@ -37,6 +37,7 @@ class CakeryDetail extends StatelessWidget {
           style: TextStyle(
             fontFamily: 'Varela',
             fontSize: 24.0.sp,
+            fontWeight: FontWeight.bold,
             color: const Color(0xFF545D68),
           ),
         ),

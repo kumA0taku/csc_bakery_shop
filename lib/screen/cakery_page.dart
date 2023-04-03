@@ -94,15 +94,7 @@ class CakeryPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 8.h),
-              Center(
-                child: Text(
-                  'Price: ${cake.price} THB',
-                  style: TextStyle(
-                      color: const Color(0xFFCC8053),
-                      fontFamily: 'Varela',
-                      fontSize: 16.sp),
-                ),
-              ),
+              
               Center(
                 child: Text(
                   cake.name,
@@ -110,7 +102,18 @@ class CakeryPage extends StatelessWidget {
                   style: TextStyle(
                       color: const Color(0xFF575E67),
                       fontFamily: 'Varela',
-                      fontSize: 14.sp),
+                      fontSize: 15.sp, 
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              SizedBox(height: 8.h),
+              Center(
+                child: Text(
+                  'Price: ${cake.price} THB',
+                  style: TextStyle(
+                      color: const Color(0xFFCC8053),
+                      fontFamily: 'Varela',
+                      fontSize: 12.sp),
                 ),
               ),
 

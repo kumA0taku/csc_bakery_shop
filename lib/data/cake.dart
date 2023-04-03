@@ -75,7 +75,7 @@ final List<Cake> listCakes = [
   ),
   Cake(
     id: 8,
-    name: 'Milk Croissant',
+    name: 'Plain Croissant',
     price: '69.50',
     imageUrl: 'assets/crois1.png',
     isFavorite: false,

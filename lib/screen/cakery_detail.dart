@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cakery_shop_ui/screen/home_page.dart';
 import 'package:flutter_cakery_shop_ui/widget/navbar_widget.dart';
 import 'package:flutter_launch/flutter_launch.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -125,7 +126,17 @@ class CakeryDetail extends StatelessWidget {
             ),
           ),
           SizedBox(height: 16.0.h),
-          Center(
+
+          // get add to cart button
+          GestureDetector(
+            onTap: () => Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return HomePage();
+                },
+              ),
+            ),
             child: Container(
               width: MediaQuery.of(context).size.width - 220.0.w,
               height: 52.0.h,
@@ -135,24 +146,9 @@ class CakeryDetail extends StatelessWidget {
               ),
               child: Center(
                 child: InkWell(
-                  onTap: () async {
-                    await FlutterLaunch.launchWhatsapp(
-                      phone: '6285640899224',
-                      message:
-                          'Hi Bahri Cakery,Saya mau order $cookiename untuk hari ini, apa bisa diantar kerumah?',
-                    );
-                  },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // Icon(
-                      //   FontAwesomeIcons.whatsapp,
-                      //   size: 32.sp,
-                      //   color: Colors.white,
-                      // ),
-                      SizedBox(
-                        width: 8.w,
-                      ),
                       Text(
                         'Add sweet',
                         style: TextStyle(
@@ -168,6 +164,7 @@ class CakeryDetail extends StatelessWidget {
               ),
             ),
           ),
+
           SizedBox(height: 28.0.h),
         ],
       ),

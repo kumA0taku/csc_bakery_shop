@@ -23,7 +23,7 @@ final List<Cake> listCakes = [
     price: '55.00',
     imageUrl: 'assets/box1.jpeg',
     isFavorite: false,
-    subMenu: 'cake_box',
+    subMenu: 'cake_slice',
   ),
   Cake(
     id: 2,
@@ -31,7 +31,7 @@ final List<Cake> listCakes = [
     price: '55.00',
     imageUrl: 'assets/box2.jpg',
     isFavorite: false,
-    subMenu: 'cake_box',
+    subMenu: 'cake_slice',
   ),
   Cake(
     id: 5,
@@ -39,7 +39,7 @@ final List<Cake> listCakes = [
     price: '89.00',
     imageUrl: 'assets/box5.jpg',
     isFavorite: false,
-    subMenu: 'cake_box',
+    subMenu: 'cake_brownies',
   ),
   Cake(
     id: 6,
@@ -47,7 +47,7 @@ final List<Cake> listCakes = [
     price: '94.00',
     imageUrl: 'assets/box6.jpeg',
     isFavorite: false,
-    subMenu: 'cake_box',
+    subMenu: 'cake_brownies',
   ),
   Cake(
     id: 3,

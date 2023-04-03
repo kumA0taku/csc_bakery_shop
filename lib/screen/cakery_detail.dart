@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cakery_shop_ui/model/cart_model.dart';
 import 'package:flutter_cakery_shop_ui/screen/home_page.dart';
 import 'package:flutter_cakery_shop_ui/widget/navbar_widget.dart';
 import 'package:flutter_launch/flutter_launch.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 
 class CakeryDetail extends StatelessWidget {
   final String assetPath;
@@ -129,15 +131,15 @@ class CakeryDetail extends StatelessWidget {
 
           // get add to cart button
           GestureDetector(
-            onTap: () => Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return HomePage();
-                },
-              ),
-            ),
-            child: Container(
+            // onTap: () => Navigator.pushReplacement(
+            //   context,
+            //   MaterialPageRoute(
+            //     builder: (context) {
+            //       return HomePage();
+            //     },
+            //   ),
+            // ),
+            child: Consumer<CartModel>(
               width: MediaQuery.of(context).size.width - 220.0.w,
               height: 52.0.h,
               decoration: BoxDecoration(

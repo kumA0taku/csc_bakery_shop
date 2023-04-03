@@ -33,22 +33,22 @@ class CakeryDetail extends StatelessWidget {
           },
         ),
         title: Text(
-          'Pesan',
+          'Bakery detail',
           style: TextStyle(
             fontFamily: 'Varela',
             fontSize: 24.0.sp,
             color: const Color(0xFF545D68),
           ),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(
-              Icons.notifications_none,
-              color: Color(0xFF545D68),
-            ),
-            onPressed: () {},
-          ),
-        ],
+        // actions: [
+        //   IconButton(
+        //     icon: const Icon(
+        //       Icons.notifications_none,
+        //       color: Color(0xFF545D68),
+        //     ),
+        //     onPressed: () {},
+        //   ),
+        // ],
       ),
       body: ListView(
         children: [
@@ -56,7 +56,7 @@ class CakeryDetail extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 16.0.sp),
             child: Text(
-              'Kue',
+              'Our dessert',
               style: TextStyle(
                 fontFamily: 'Varela',
                 fontSize: 40.0.sp,
@@ -88,7 +88,7 @@ class CakeryDetail extends StatelessWidget {
           SizedBox(height: 16.0.h),
           Center(
             child: Text(
-              'Rp $cookieprice',
+              'THB $cookieprice',
               style: TextStyle(
                 fontFamily: 'Varela',
                 fontSize: 20.0.sp,
@@ -112,7 +112,7 @@ class CakeryDetail extends StatelessWidget {
             child: SizedBox(
               width: MediaQuery.of(context).size.width - 52.0,
               child: Text(
-                'Bolu atau kue bolu adalah kue berbahan dasar tepung, gula, dan telur. Kue bolu dan cake umumnya dimatangkan dengan cara dipanggang di dalam oven, walaupun ada juga bolu yang dikukus',
+                '...add more detail',
                 maxLines: 4,
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -126,7 +126,7 @@ class CakeryDetail extends StatelessWidget {
           SizedBox(height: 16.0.h),
           Center(
             child: Container(
-              width: MediaQuery.of(context).size.width - 100.0.w,
+              width: MediaQuery.of(context).size.width - 220.0.w,
               height: 52.0.h,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(24.0.sp),
@@ -144,16 +144,16 @@ class CakeryDetail extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(
-                        FontAwesomeIcons.whatsapp,
-                        size: 32.sp,
-                        color: Colors.white,
-                      ),
+                      // Icon(
+                      //   FontAwesomeIcons.whatsapp,
+                      //   size: 32.sp,
+                      //   color: Colors.white,
+                      // ),
                       SizedBox(
                         width: 8.w,
                       ),
                       Text(
-                        'Pesan via Whatsapp',
+                        'Add sweet',
                         style: TextStyle(
                           fontFamily: 'Varela',
                           fontSize: 16.0.sp,

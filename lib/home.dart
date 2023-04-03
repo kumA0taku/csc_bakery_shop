@@ -29,7 +29,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         leading: IconButton(
           icon: const Icon(
             Icons.arrow_back,
-            color: Color(0xFF545D68),
+            color: Color.fromARGB(255, 255, 255, 255),
           ),
           onPressed: () {},
         ),
@@ -41,15 +41,15 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             color: const Color(0xFF545D68),
           ),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(
-              Icons.notifications_none,
-              color: Color(0xFF545D68),
-            ),
-            onPressed: () {},
-          ),
-        ],
+        // actions: [
+        //   IconButton(
+        //     icon: const Icon(
+        //       Icons.notifications_none,
+        //       color: Color(0xFF545D68),
+        //     ),
+        //     onPressed: () {},
+        //   ),
+        // ],
       ),
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 16.sp),

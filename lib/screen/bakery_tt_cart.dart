@@ -40,15 +40,15 @@ class BakeryTTCart extends StatelessWidget {
             color: const Color(0xFF545D68),
           ),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(
-              Icons.notifications_none,
-              color: Color(0xFF545D68),
-            ),
-            onPressed: () {},
-          ),
-        ],
+        // actions: [
+        //   IconButton(
+        //     icon: const Icon(
+        //       Icons.notifications_none,
+        //       color: Color(0xFF545D68),
+        //     ),
+        //     onPressed: () {},
+        //   ),
+        // ],
       ),
       body: ListView(
         children: [

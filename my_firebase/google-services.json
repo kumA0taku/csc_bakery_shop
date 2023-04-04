@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "875571031586",
+    "project_id": "csc-bakery",
+    "storage_bucket": "csc-bakery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875571031586:android:cb62a5a36c08f4ee28e47b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_cakery_shop_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875571031586-jaektc6thcm1b87qqe3ho57upu45r3b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKj3LRkH3y5-bKC72HrFbMk3or73n224g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875571031586-jaektc6thcm1b87qqe3ho57upu45r3b6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

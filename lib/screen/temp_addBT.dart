@@ -26,30 +26,30 @@ class _HomePageState extends State<HomePage> {
             color: Colors.grey[700],
           ),
         ),
-        title: Text(
-          'Sydney, Australia',
-          style: TextStyle(
-            fontSize: 16,
-            color: Colors.grey[700],
-          ),
-        ),
+        // title: Text(
+        //   'Sydney, Australia',
+        //   style: TextStyle(
+        //     fontSize: 16,
+        //     color: Colors.grey[700],
+        //   ),
+        // ),
         centerTitle: false,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 24.0),
-            child: Container(
-              padding: EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: Colors.grey[200],
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Icon(
-                Icons.person,
-                color: Colors.grey,
-              ),
-            ),
-          ),
-        ],
+        // actions: [
+        //   Padding(
+        //     padding: const EdgeInsets.only(right: 24.0),
+        //     child: Container(
+        //       padding: EdgeInsets.all(16),
+        //       decoration: BoxDecoration(
+        //         color: Colors.grey[200],
+        //         borderRadius: BorderRadius.circular(12),
+        //       ),
+        //       child: Icon(
+        //         Icons.person,
+        //         color: Colors.grey,
+        //       ),
+        //     ),
+        //   ),
+        // ],
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black,
@@ -66,48 +66,48 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(height: 48),
+          // const SizedBox(height: 48),
 
-          // good morning bro
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24.0),
-            child: Text('Good morning,'),
-          ),
+          // // good morning bro
+          // const Padding(
+          //   padding: EdgeInsets.symmetric(horizontal: 24.0),
+          //   child: Text('Good morning,'),
+          // ),
 
-          const SizedBox(height: 4),
+          // const SizedBox(height: 4),
 
           // Let's order fresh items for you
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0),
-            child: Text(
-              "Let's order fresh items for you", //focus this!!
-              style: GoogleFonts.notoSerif(
-                fontSize: 36,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          //   child: Text(
+          //     "Let's order fresh items for you", //focus this!!
+          //     style: GoogleFonts.notoSerif(
+          //       fontSize: 36,
+          //       fontWeight: FontWeight.bold,
+          //     ),
+          //   ),
+          // ),
 
-          const SizedBox(height: 24),
+          // const SizedBox(height: 24),
 
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24.0),
-            child: Divider(),
-          ),
+          // const Padding(
+          //   padding: EdgeInsets.symmetric(horizontal: 24.0),
+          //   child: Divider(),
+          // ),
 
-          const SizedBox(height: 24),
+          // const SizedBox(height: 24),
 
-          // categories -> horizontal listview
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0),
-            child: Text(
-              "Fresh Items",
-              style: GoogleFonts.notoSerif(
-                //fontWeight: FontWeight.bold,
-                fontSize: 18,
-              ),
-            ),
-          ),
+          // // categories -> horizontal listview
+          // Padding(
+          //   padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          //   child: Text(
+          //     "Fresh Items",
+          //     style: GoogleFonts.notoSerif(
+          //       //fontWeight: FontWeight.bold,
+          //       fontSize: 18,
+          //     ),
+          //   ),
+          // ),
 
           // recent orders -> show last 3
           Expanded(
@@ -118,7 +118,7 @@ class _HomePageState extends State<HomePage> {
                   // physics: const NeverScrollableScrollPhysics(),
                   itemCount: value.shopItems.length,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 1,
+                    crossAxisCount: 2,
                     childAspectRatio: 1 / 1.2,
                   ),
                   itemBuilder: (context, index) {

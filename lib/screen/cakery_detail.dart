@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cakery_shop_ui/components/grocery_item_tile.dart';
 import 'package:flutter_cakery_shop_ui/model/cart_model.dart';
 import 'package:flutter_cakery_shop_ui/screen/home_page.dart';
 import 'package:flutter_cakery_shop_ui/widget/navbar_widget.dart';
@@ -130,7 +131,7 @@ class CakeryDetail extends StatelessWidget {
           SizedBox(height: 16.0.h),
 
           // get add to cart button
-          GestureDetector(
+          Expanded(
             // onTap: () => Navigator.pushReplacement(
             //   context,
             //   MaterialPageRoute(
@@ -140,30 +141,28 @@ class CakeryDetail extends StatelessWidget {
             //   ),
             // ),
             child: Consumer<CartModel>(
-              width: MediaQuery.of(context).size.width - 220.0.w,
-              height: 52.0.h,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(24.0.sp),
-                color: const Color(0xFFF17532),
-              ),
-              child: Center(
-                child: InkWell(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Add sweet',
-                        style: TextStyle(
-                          fontFamily: 'Varela',
-                          fontSize: 16.0.sp,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
+              builder: (context, value, child) {
+                return GridView.builder(
+                  padding: const EdgeInsets.all(12),
+                  // physics: const NeverScrollableScrollPhysics(),
+                  itemCount: value.shopItems.length,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 1,
+                    childAspectRatio: 1 / 1.2,
                   ),
-                ),
-              ),
+                  itemBuilder: (context, index) {
+                    return GroceryItemTile(
+                      itemName: value.shopItems[index][0],
+                      itemPrice: value.shopItems[index][1],
+                      imagePath: value.shopItems[index][2],
+                      color: value.shopItems[index][3],
+                      onPressed: () =>
+                          Provider.of<CartModel>(context, listen: false)
+                              .addItemToCart(index),
+                    );
+                  },
+                );
+              },
             ),
           ),
 

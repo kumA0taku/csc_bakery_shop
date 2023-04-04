@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_cakery_shop_ui/widget/navbar_widget.dart';
 import 'package:flutter_launch/flutter_launch.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -135,26 +136,26 @@ class CakeryDetail extends StatelessWidget {
               ),
               child: Center(
                 child: InkWell(
-                  onTap: () async {
-                    await FlutterLaunch.launchWhatsapp(
-                      phone: '6285640899224',
-                      message:
-                          'Hi Bahri Cakery,Saya mau order $cookiename untuk hari ini, apa bisa diantar kerumah?',
-                    );
+                  onTap: () {
+                    // await FlutterLaunch.launchWhatsapp(
+                    //   phone: '6285640899224',
+                    //   message:
+                    //       'Hi Bahri Cakery,Saya mau order $cookiename untuk hari ini, apa bisa diantar kerumah?',
+                    // );
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // Icon(
-                      //   FontAwesomeIcons.whatsapp,
-                      //   size: 32.sp,
-                      //   color: Colors.white,
-                      // ),
+                      Icon(
+                        FontAwesomeIcons.bagShopping,
+                        size: 22.sp,
+                        color: Colors.white,
+                      ),
                       SizedBox(
                         width: 8.w,
                       ),
                       Text(
-                        'Add sweet',
+                        'Buy',
                         style: TextStyle(
                           fontFamily: 'Varela',
                           fontSize: 16.0.sp,
@@ -162,12 +163,56 @@ class CakeryDetail extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
+
+                      // MaterialButton(
+                      //   onPressed: () {},
+                      //   color: Colors.black,
+                      //   child: Text(
+                      //     '\$',
+                      //     style: TextStyle(
+                      //       color: Colors.white,
+                      //       fontWeight: FontWeight.bold,
+                      //     ),
+                      //   ),
+                      // )
                     ],
                   ),
                 ),
               ),
             ),
           ),
+          // Padding(
+          //   padding: EdgeInsets.only(top: 40, left: 22),
+          //   child: Row(
+          //     children: [
+          //       Container(
+          //         padding: EdgeInsets.all(2),
+          //         decoration: BoxDecoration(
+          //           color: Color(0xFFF17532),
+          //           borderRadius: BorderRadius.circular(20),
+          //         ),
+          //         child: Icon(
+          //           Icons.arrow_drop_down_rounded,
+          //           color: Colors.white,
+          //           size: 40,
+          //         ),
+          //       ),
+
+          //       Container(
+          //         padding: EdgeInsets.all(2),
+          //         decoration: BoxDecoration(
+          //           color: Color(0xFFF17532),
+          //           borderRadius: BorderRadius.circular(20),
+          //         ),
+          //         child: Icon(
+          //           Icons.arrow_drop_up_rounded,
+          //           color: Colors.white,
+          //           size: 40,
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
           SizedBox(height: 28.0.h),
         ],
       ),

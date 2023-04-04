@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cakery_shop_ui/screen/cakery_page.dart';
+import 'package:flutter_cakery_shop_ui/screen/cakery_page_2.dart';
 import 'package:flutter_cakery_shop_ui/widget/navbar_widget.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -78,33 +79,33 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       )),
                 ),
                 Tab(
-                  child: Text('Cake Box',
+                  child: Text('Shop',
                       style: TextStyle(
                         fontFamily: 'Varela',
                         fontSize: 20.0.sp,
                       )),
                 ),
-                Tab(
-                  child: Text('Cake Slice',
-                      style: TextStyle(
-                        fontFamily: 'Varela',
-                        fontSize: 20.0.sp,
-                      )),
-                ),
-                Tab(
-                  child: Text('Brownies',
-                      style: TextStyle(
-                        fontFamily: 'Varela',
-                        fontSize: 20.0.sp,
-                      )),
-                ),
-                Tab(
-                  child: Text('Croissant',
-                      style: TextStyle(
-                        fontFamily: 'Varela',
-                        fontSize: 20.0.sp,
-                      )),
-                )
+                // Tab(
+                //   child: Text('Cake Slice',
+                //       style: TextStyle(
+                //         fontFamily: 'Varela',
+                //         fontSize: 20.0.sp,
+                //       )),
+                // ),
+                // Tab(
+                //   child: Text('Brownies',
+                //       style: TextStyle(
+                //         fontFamily: 'Varela',
+                //         fontSize: 20.0.sp,
+                //       )),
+                // ),
+                // Tab(
+                //   child: Text('Croissant',
+                //       style: TextStyle(
+                //         fontFamily: 'Varela',
+                //         fontSize: 20.0.sp,
+                //       )),
+                // )
               ]),
           SizedBox(
             height: MediaQuery.of(context).size.height - 160.0.h,
@@ -113,10 +114,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               controller: _tabController,
               children: const [
                 CakeryPage(),
-                CakeryPage(),
-                CakeryPage(),
-                CakeryPage(),
-                CakeryPage(),
+                MyShop(assetPath: '', cookiename: '', cookieprice: '',),
+                // CakeryPage(),
+                // CakeryPage(),
+                // CakeryPage(),
               ],
             ),
           )

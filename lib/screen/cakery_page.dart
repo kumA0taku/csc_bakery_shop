@@ -38,12 +38,14 @@ class CakeryPage extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(4.sp),
       child: InkWell(
+        //focus this!!
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(builder: (context) {
             return CakeryDetail(
               assetPath: cake.imageUrl,
               cookieprice: cake.price,
               cookiename: cake.name,
+              bakerDescrip: cake.bakerDescription,
             );
           }));
         },
@@ -116,74 +118,6 @@ class CakeryPage extends StatelessWidget {
                       fontSize: 12.sp),
                 ),
               ),
-
-              // Padding(
-              //   padding: EdgeInsets.all(8.0.sp),
-              //   child: Container(
-              //     color: const Color(0xFFEBEBEB),
-              //     height: 1.0.sp,
-              //   ),
-              // ),
-
-              // Padding(
-              //   padding: EdgeInsets.symmetric(horizontal: 4.sp),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.center,
-              //     children: [
-              //       Row(
-              //         children: [
-              //           Icon(
-              //             Icons.chat,
-              //             color: const Color(0xFFD17E50),
-              //             size: 16.sp,
-              //           ),
-              //           SizedBox(
-              //             width: 8.sp,
-              //           ),
-              //           Text(
-              //             'Chat',
-              //             style: TextStyle(
-              //                 fontFamily: 'Varela',
-              //                 color: const Color(0xFFD17E50),
-              //                 fontSize: 12.sp),
-              //           ),
-              //         ],
-              //       ),
-              //       SizedBox(
-              //         width: 16.h,
-              //       ),
-              //       Row(
-              //         children: [
-              //           Icon(
-              //             Icons.remove_circle_outline,
-              //             color: const Color(0xFFD17E50),
-              //             size: 16.sp,
-              //           ),
-              //           SizedBox(
-              //             width: 8.w,
-              //           ),
-              //           Text(
-              //             '3',
-              //             style: TextStyle(
-              //                 fontFamily: 'Varela',
-              //                 color: const Color(0xFFD17E50),
-              //                 fontWeight: FontWeight.bold,
-              //                 fontSize: 12.sp),
-              //           ),
-              //           SizedBox(
-              //             width: 8.w,
-              //           ),
-              //           Icon(
-              //             Icons.add_circle_outline,
-              //             color: const Color(0xFFD17E50),
-              //             size: 16.sp,
-              //           ),
-              //         ],
-              //       ),
-              //     ],
-              //   ),
-              // ),
-
             ],
           ),
         ),

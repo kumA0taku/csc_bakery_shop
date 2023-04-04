@@ -8,12 +8,14 @@ class CakeryDetail extends StatelessWidget {
   final String assetPath;
   final String cookieprice;
   final String cookiename;
+  final String bakerDescrip;
 
   const CakeryDetail({
     Key? key,
     required this.assetPath,
     required this.cookieprice,
     required this.cookiename,
+    required this.bakerDescrip,
   }) : super(key: key);
 
   @override
@@ -33,22 +35,22 @@ class CakeryDetail extends StatelessWidget {
           },
         ),
         title: Text(
-          'Pesan',
+          'CSC Bakery',
           style: TextStyle(
             fontFamily: 'Varela',
             fontSize: 24.0.sp,
             color: const Color(0xFF545D68),
           ),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(
-              Icons.notifications_none,
-              color: Color(0xFF545D68),
-            ),
-            onPressed: () {},
-          ),
-        ],
+        // actions: [
+        //   IconButton(
+        //     icon: const Icon(
+        //       Icons.notifications_none,
+        //       color: Color(0xFF545D68),
+        //     ),
+        //     onPressed: () {},
+        //   ),
+        // ],
       ),
       body: ListView(
         children: [
@@ -56,7 +58,7 @@ class CakeryDetail extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 16.0.sp),
             child: Text(
-              'Kue',
+              'Details',
               style: TextStyle(
                 fontFamily: 'Varela',
                 fontSize: 40.0.sp,
@@ -112,70 +114,19 @@ class CakeryDetail extends StatelessWidget {
             child: SizedBox(
               width: MediaQuery.of(context).size.width - 52.0,
               child: Text(
-                'Bolu atau kue bolu adalah kue berbahan dasar tepung, gula, dan telur. Kue bolu dan cake umumnya dimatangkan dengan cara dipanggang di dalam oven, walaupun ada juga bolu yang dikukus',
+                bakerDescrip,
                 maxLines: 4,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Varela',
                   fontSize: 16.0.sp,
-                  color: const Color(0xFFB4B8B9),
+                  color: Color.fromARGB(255, 0, 0, 0),
                 ),
               ),
             ),
           ),
-          SizedBox(height: 16.0.h),
-          Center(
-            child: Container(
-              width: MediaQuery.of(context).size.width - 100.0.w,
-              height: 52.0.h,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(24.0.sp),
-                color: const Color(0xFFF17532),
-              ),
-              child: Center(
-                child: InkWell(
-                  onTap: () async {
-                    await FlutterLaunch.launchWhatsapp(
-                      phone: '6285640899224',
-                      message:
-                          'Hi Bahri Cakery,Saya mau order $cookiename untuk hari ini, apa bisa diantar kerumah?',
-                    );
-                  },
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        FontAwesomeIcons.whatsapp,
-                        size: 32.sp,
-                        color: Colors.white,
-                      ),
-                      SizedBox(
-                        width: 8.w,
-                      ),
-                      Text(
-                        'Pesan via Whatsapp',
-                        style: TextStyle(
-                          fontFamily: 'Varela',
-                          fontSize: 16.0.sp,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ),
-          SizedBox(height: 28.0.h),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: const Color(0xFFF17532),
-        child: const Icon(Icons.fastfood),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: const NavbarWidget(),
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cakery_shop_ui/home.dart';
-import 'package:flutter_cakery_shop_ui/screen/bakery_tt_cart.dart';
+// import 'package:flutter_cakery_shop_ui/screen/bakery_tt_cart.dart';
+import 'package:flutter_cakery_shop_ui/screen/cart_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class NavbarWidget extends StatelessWidget {
@@ -32,22 +33,6 @@ class NavbarWidget extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  //     IconButton(
-                  //       iconSize: 30.0,
-                  //       padding: EdgeInsets.only(left: 28.0),
-                  //           color: Color(0xFFEF7532),
-                  //       icon: Icon(Icons.home),
-                  //       onPressed: () {
-
-                  // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-                  //   return BakeryTTCart(
-                  //     // assetPath: cake.imageUrl,
-                  //     // cookieprice: cake.price,
-                  //     // cookiename: cake.name,
-                  //   );
-                  // }));
-                  //       },
-
                   IconButton(
                     iconSize: 30.0,
                     padding: EdgeInsets.only(left: 28.0),
@@ -77,7 +62,7 @@ class NavbarWidget extends StatelessWidget {
                     onPressed: () {
                       Navigator.of(context)
                           .push(MaterialPageRoute(builder: (context) {
-                        return BakeryTTCart();
+                        return CartPage();
                       }));
                     },
                   ),

@@ -43,6 +43,15 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             color: const Color(0xFF545D68),
           ),
         ),
+        // actions: [
+        //   IconButton(
+        //     icon: const Icon(
+        //       Icons.notifications_none,
+        //       color: Color(0xFF545D68),
+        //     ),
+        //     onPressed: () {},
+        //   ),
+        // ],
       ),
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 16.sp),
@@ -76,6 +85,27 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         fontSize: 20.0.sp,
                       )),
                 ),
+                // Tab(
+                //   child: Text('Cake Slice',
+                //       style: TextStyle(
+                //         fontFamily: 'Varela',
+                //         fontSize: 20.0.sp,
+                //       )),
+                // ),
+                // Tab(
+                //   child: Text('Brownies',
+                //       style: TextStyle(
+                //         fontFamily: 'Varela',
+                //         fontSize: 20.0.sp,
+                //       )),
+                // ),
+                // Tab(
+                //   child: Text('Croissant',
+                //       style: TextStyle(
+                //         fontFamily: 'Varela',
+                //         fontSize: 20.0.sp,
+                //       )),
+                // )
               ]),
           SizedBox(
             height: MediaQuery.of(context).size.height - 160.0.h,
@@ -93,6 +123,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           )
         ],
       ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {},
+      //   // backgroundColor: const Color(0xFFF17532),
+      //   // child: const Icon(Icons.fastfood),
+      // ),
       bottomNavigationBar: const NavbarWidget(),
     );
   }

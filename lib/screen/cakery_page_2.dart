@@ -3,7 +3,6 @@ import 'package:flutter_cakery_shop_ui/components/grocery_item_tile.dart';
 import 'package:flutter_cakery_shop_ui/model/cart_model.dart';
 import 'package:flutter_cakery_shop_ui/screen/cakery_detail.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_cakery_shop_ui/screen/home_page.dart';
 import 'package:flutter_cakery_shop_ui/widget/navbar_widget.dart';
 import 'package:flutter_launch/flutter_launch.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

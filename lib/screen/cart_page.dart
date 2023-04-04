@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_cakery_shop_ui/screen/cakery_page.dart';
+import 'package:flutter_cakery_shop_ui/screen/show_qrcode.dart';
 import 'package:provider/provider.dart';
 
+import '../home.dart';
 import '../model/cart_model.dart';
 
 class CartPage extends StatelessWidget {
@@ -13,8 +15,16 @@ class CartPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        iconTheme: IconThemeData(
-          color: Colors.grey[800],
+        leading: IconButton(
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Color.fromARGB(255, 0, 0, 0),
+          ),
+          onPressed: () {
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+              return Home();
+            }));
+          },
         ),
       ),
       body: Consumer<CartModel>(
@@ -27,7 +37,7 @@ class CartPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 24.0),
                 child: Text(
                   "My Cart",
-                  style: GoogleFonts.notoSerif(
+                  style: TextStyle(
                     fontSize: 36,
                     fontWeight: FontWeight.bold,
                   ),
@@ -110,24 +120,31 @@ class CartPage extends StatelessWidget {
                       ),
 
                       // pay now
-                      Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.green.shade200),
-                          borderRadius: BorderRadius.circular(28),
+
+                      // get started button
+                      GestureDetector(
+                        onTap: () => Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return ShowQRcode();
+                            },
+                          ),
                         ),
-                        padding: const EdgeInsets.all(12),
-                        child: Row(
-                          children: const [
-                            Text(
-                              'Pay Now',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            Icon(
-                              Icons.arrow_forward_ios,
-                              size: 16,
+                        child: Container(
+                          padding: const EdgeInsets.all(24),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            color: const Color.fromARGB(255, 112, 91, 222),
+                          ),
+                          child: const Text(
+                            "Pay Now", //focus this!!!
+                            style: TextStyle(
                               color: Colors.white,
+                              // fontWeight: FontWeight.bold,
+                              fontSize: 16,
                             ),
-                          ],
+                          ),
                         ),
                       ),
                     ],

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cakery_shop_ui/home.dart';
 import 'package:flutter_cakery_shop_ui/model/cart_model.dart';
-import 'package:flutter_cakery_shop_ui/screen/home_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 

@@ -90,7 +90,7 @@ class CakeryDetail extends StatelessWidget {
           SizedBox(height: 16.0.h),
           Center(
             child: Text(
-              'Rp $cookieprice',
+              'THB $cookieprice',
               style: TextStyle(
                 fontFamily: 'Varela',
                 fontSize: 20.0.sp,

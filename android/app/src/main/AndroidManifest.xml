@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flutter_cakery_shop_ui">
    <application
-        android:label="flutter_cakery_shop_ui"
+        android:label="CSC Bakery"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

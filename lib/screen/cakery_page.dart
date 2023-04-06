@@ -69,20 +69,20 @@ class CakeryPage extends StatelessWidget {
                   right: 8.sp,
                   top: 8.sp,
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    cake.isFavorite
-                        ? const Icon(
-                            Icons.favorite,
-                            color: Color(0xFFEF7532),
-                          )
-                        : const Icon(
-                            Icons.favorite_border,
-                            color: Color(0xFFEF7532),
-                          )
-                  ],
-                ),
+                // child: Row(
+                //   mainAxisAlignment: MainAxisAlignment.end,
+                //   children: [
+                //     cake.isFavorite
+                //         ? const Icon(
+                //             Icons.favorite,
+                //             color: Color(0xFFEF7532),
+                //           )
+                //         : const Icon(
+                //             Icons.favorite_border,
+                //             color: Color(0xFFEF7532),
+                //           )
+                //   ],
+                // ),
               ),
               Container(
                 height: 50.h,
